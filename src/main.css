@@ -1,0 +1,90 @@
+.cube__block{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+.cube__up{
+    left: 0;
+    top: -25px;
+    position: absolute;
+    border: 20px solid transparent;
+    border-bottom: 15px solid white;
+}
+.cube__main{
+    left: 0;
+    box-sizing: border-box;
+    top: 10px;
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: white;
+}
+.cube__down{
+    left: 0;
+    top: 30px;
+    position: absolute;
+    border: 20px solid transparent;
+    border-top: 15px solid white;
+}
+.cube__line_down-right{
+    left: 30px;
+    top: 7px;
+    transform: rotate(30deg);
+    position: absolute;
+    height: 41px;
+    background-color: black;
+    width: 1px;
+}
+.cube__line_down-left{
+    left: 9px;
+    top: 7px;
+    transform: rotate(-30deg);
+    position: absolute;
+    height: 41px;
+    background-color: black;
+    width: 1px;
+}
+.cube__line_up{
+    left: 0;
+    top: 9px;
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 40px;
+}
+.cube__number{
+    color: black;
+    font-size: 15px;
+    z-index: 3;
+    left: 15px;
+    top: 10px;
+    position: absolute;
+    width: 10px;
+}
+/*------menu--------------*/
+
+.menu__block{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    transition-duration: 1s;
+    padding: 10px;
+    margin: -10px 0 0 -10px;
+    background-color: rgba(88, 144, 181,0.5);
+    border-radius: 10px;
+    border: 3px solid black;
+    width: 100%;
+}
+.menu__button{
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    transition-duration: 1s;
+    border-radius: 5px;
+    background-color: rgba(39, 174, 223, 0.7);
+    border: 2px solid black;
+}
